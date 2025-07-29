@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Pradhan - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./web4.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.3); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="glass bg-gradient-to-r from-blue-900 to-blue-600 text-white py-12">
+        <div class="container mx-auto text-center">
+            <img src="./my pic.jpg" alt="Profile Picture" class="mx-auto rounded-full w-32 h-32 border-4 border-white mb-4">
+            <h1 class="text-5xl font-bold" id="header-title">Abhishek Pradhan</h1>
+            <p class="text-2xl mt-4" id="header-subtitle">Aspiring Technologist | Web Developer | AI Enthusiast</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 glass shadow-md z-50">
+        <div class="container mx-auto px-4 flex justify-center space-x-6 py-4">
+            <a href="#about" class="nav-btn text-black-700 font-medium px-4 py-2 rounded-md hover:bg-blue-100">About</a>
+            <a href="#skills" class="nav-btn text-black-700 font-medium px-4 py-2 rounded-md hover:bg-blue-100">Skills</a>
+            <a href="#experience" class="nav-btn text-black-700 font-medium px-4 py-2 rounded-md hover:bg-blue-100">Experience</a>
+            <a href="#certifications" class="nav-btn text-black-700 font-medium px-4 py-2 rounded-md hover:bg-blue-100">Certifications</a>
+            <a href="#education" class="nav-btn text-black-700 font-medium px-4 py-2 rounded-md hover:bg-blue-100">Education</a>
+            <a href="#contact" class="nav-btn text-black-700 font-medium px-4 py-2 rounded-md hover:bg-blue-100">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 space-y-12">
+        <!-- About Section -->
+        <section id="about" class="glass shadow-md rounded-lg p-6">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <div class="bg-blue-100 p-4 rounded-md"><p class="text-White-700 leading-relaxed">
+                Hi, I’m Abhishek Pradhan — a tech enthusiast and aspiring engineer, currently set to join Newton School of Technology (Class of 2025).
+
+                I have hands-on experience with HTML, CSS, and Java, and have explored cybersecurity through awareness programs and quizzes, along with AI & ML via a masterclass at Scaler.
+
+                In 2024, I was selected for the YIIC 3.0 Internship at Scaler School of Technology, where I gained exposure to teamwork, innovation, and problem-solving—earning recognition for my contributions.
+
+                I’m passionate about technology, innovation, and creative problem-solving, and I look forward to building impactful projects, learning from industry mentors, and growing as a software engineer.
+
+             </p></div>
+            
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="glass shadow-md rounded-lg p-6">
+            <h2 class="text-3xl font-bold mb-4">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-blue-100 p-4 rounded-md">HTML & CSS (Basic)</div>
+                <div class="bg-blue-100 p-4 rounded-md">Java (Up to Class 10)</div>
+                <div class="bg-blue-100 p-4 rounded-md">Web Development (GitHub-hosted website)</div>
+                <div class="bg-blue-100 p-4 rounded-md">Cybersecurity Awareness</div>
+                
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="glass shadow-md rounded-lg p-6">
+            <h2 class="text-3xl font-bold mb-4">Experience</h2>
+            <ul class="list-none space-y-4">
+                <li class="bg-blue-100 p-4 rounded-md">
+                    <strong>Intern at Scaler School of Technology (YIIC 3.0)</strong>
+                    <p>Gained hands-on experience in technology and teamwork.</p>
+                    <p>Dec 2024 - May 2025</p>
+                </li>
+                
+            </ul>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="glass shadow-md rounded-lg p-6">
+            <h2 class="text-3xl font-bold mb-4">Certifications</h2>
+            <ul class="list-none space-y-4">
+                <li class="bg-blue-100 p-4 rounded-md">
+                    <strong> Internship Certificate By Scaler School of Technology</strong>  
+                    <p><button><a href="https://moonshot.scaler.com/s/sl/RnfqwLblAG">View Certificate</a></button></p>
+                </li>
+                <li class="bg-blue-100 p-4 rounded-md">
+                    <strong>Participation in Master Class on "Deep Dive into AI and ML" by Scaler School of Technology</strong> 
+                    <p><button><a href="https://moonshot.scaler.com/s/sl/j02WoIq0bG">View Certificate</a></button></p>
+                </li>
+                <li class="bg-blue-100 p-4 rounded-md">
+                    <strong>Cybersecurity Quiz by MyGov and DSCI (2021)</strong>
+                    <p><button><a href="https://drive.google.com/file/d/1OW6eco5K03XLWaUXVXtoExOlPDTshofH/view">View Certificate</a></button></p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="glass shadow-md rounded-lg p-6">
+            <h2 class="text-3xl font-bold mb-4">Education</h2>
+              <ul class="list-none space-y-4">
+                <li class="bg-blue-100 p-4 rounded-md">
+                    <strong>Newton School of Technology</strong>
+                    <p>B.Tech in CS & AI (2025-2029)</p>
+                    <p>RU Campus</p>
+                </li>
+
+                <li class="bg-blue-100 p-4 rounded-md">
+                    <strong>Esteem Public School</strong>
+                    <p>Class 11 - 12</p>
+                </li>
+
+                <li class="bg-blue-100 p-4 rounded-md">
+                    <strong>Xavier School</strong>
+                    <p>Class 4 - 10</p>
+                </li>
+
+                <li class="bg-blue-100 p-4 rounded-md">
+                    <strong>St. Xavier School</strong>
+                    <p>Class LKG - 3</p>
+                </li>
+                
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="glass shadow-md rounded-lg p-6">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <a href="./mail.html" target="_blank" class="flex justify-center items-center">
+                    <img src="./gmail.png" alt="Email" class="w-16 h-16">
+                </a>
+                <a href="https://github.com/abhishek01012008" target="_blank" class="flex justify-center items-center">
+                    <img src="./github.png" alt="GitHub" class="w-16 h-16">
+                </a>
+                <a href="https://www.linkedin.com/in/abhishek-pradhan-373249342/" target="_blank" class="flex justify-center items-center">
+                    <img src="./linkedin.png" alt="LinkedIn" class="w-16 h-16">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Abhishek Pradhan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        gsap.from("#header-title", { duration: 1, y: -50, opacity: 0 });
+        gsap.from("#header-subtitle", { duration: 1, y: 50, opacity: 0, delay: 0.5 });
+        gsap.from(".nav-btn", { duration: 0.7, opacity: 0, stagger: 0.1 });
+
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section, index) => {
+            gsap.from(section, {
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                delay: index * 0.2,
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./web2.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.3); 
+            backdrop-filter: blur(12px); 
+            border: 1px solid rgba(255, 255, 255, 0.2); 
+        }
+    </style>
+    <script>
+        function copyEmail() {
+            const email = document.getElementById("email");
+
+            
+            const tempInput = document.createElement("input");
+            document.body.appendChild(tempInput);
+            tempInput.value = email.textContent;
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const notification = document.getElementById("copy-notification");
+            notification.classList.remove("hidden");
+            setTimeout(() => notification.classList.add("hidden"), 2000);
+        }
+    </script>
+    
+</head>
+<body class="bg-gray-100 font-sans">
+    
+    <div class="min-h-screen flex items-center justify-center">
+        <section id="skills" class="glass shadow-md rounded-lg p-6">
+        
+            <div class="bg-white shadow-md rounded-lg p-8 text-center">
+            <h1 class="text-2xl font-bold mb-4">Contact Me</h1>
+            <p class="text-gray-700 text-lg mb-4">Here is my email:</p>
+            <div class="flex items-center justify-center space-x-4">
+                <span id="email" class="text-blue-600 font-medium text-lg">abhishekpradhan248@gmail.com</span>
+                <button onclick="copyEmail()" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">
+                    Copy
+                </button>
+            </div>
+            <p id="copy-notification" class="text-green-500 text-sm mt-2 hidden">Email copied to clipboard!</p>
+
+            
+            <a href="./index.html" class="mt-4 inline-block bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition">
+                Back to Main Website
+            </a>
+            
+        </div>
+    </section>
+    </div>
+    
+</body>
+</html>
+
